@@ -101,7 +101,7 @@ class AppActivityLauncherPlugin : FlutterPlugin, MethodCallHandler {
         if (appId != null && act != null)
             intent.setClassName(
                 "$appId",
-                "$appId.$act"
+                "$act"
             )
         if (extras != null) {
             for ((key, value) in extras) {
